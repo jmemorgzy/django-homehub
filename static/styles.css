@@ -1,4 +1,6 @@
-* {
+*,
+body,
+html {
     box-sizing: border-box;
 }
 
@@ -38,4 +40,11 @@ body {
 #content {
     margin-left: 200px;
     padding-left: 20px;
+}
+
+/* Text decoration */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

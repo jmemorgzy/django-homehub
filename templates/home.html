@@ -6,5 +6,14 @@ Home | HomeHub
 
 {% block content %}
 <h1>Home Page</h1>
-<p>There are {{devices|length}} bulbs connected.</p>
+<p>There are {{bulbs|length}} bulbs connected.</p>
+<ul>
+    {% for bulb in bulbs %}
+        <li>
+            {# <a href="bulbs/"> #}
+            {{bulb}}
+            {# </a> #}
+        </li>
+    {% endfor %}
+</ul>
 {% endblock %}
